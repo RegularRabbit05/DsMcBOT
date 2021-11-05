@@ -1,0 +1,7 @@
+name: Dsmcbot
+version: '${project.version}'
+main: net.reg.dsmcbot.MCBot
+api-version: 1.17
+prefix: DISCORD
+load: STARTUP
+authors: [ Reg ]
