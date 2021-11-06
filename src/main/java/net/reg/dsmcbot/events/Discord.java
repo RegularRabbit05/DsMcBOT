@@ -38,7 +38,7 @@ public class Discord extends ListenerAdapter {
                 consoleIDs.remove(event.getAuthor().getIdLong());
             } else {
                 Bukkit.getScheduler().scheduleSyncDelayedTask(MCBot.getInstance(), () -> Bukkit.dispatchCommand(Bukkit.getConsoleSender(), event.getMessage().getContentDisplay()));
-                event.getMessage().addReaction("☑️");
+                event.getMessage().addReaction("☑️").queue();
             }
             return;
         }
